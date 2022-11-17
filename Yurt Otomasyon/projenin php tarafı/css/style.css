@@ -1,0 +1,18 @@
+.navbar {
+	background-color: #222831;
+}
+.navbar a{
+	color: white;
+	font-family: Calibri;
+}
+.navbar a:hover{
+	color: #00ADB5;
+}
+.navbar .dropdown-item {
+	background-color: blue;
+	color: black;
+}
+.dropdown-item ul li a:hover{
+	background-color: #00ADB5 ;
+}
+

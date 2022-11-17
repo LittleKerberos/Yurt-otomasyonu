@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OgrenciDataBase" targetNamespace="http://tempuri.org/OgrenciDataBase.xsd" xmlns:mstns="http://tempuri.org/OgrenciDataBase.xsd" xmlns="http://tempuri.org/OgrenciDataBase.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YurtOtomasyonDatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YurtOtomasyonDatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YurtOtomasyonu.Properties.Settings.GlobalReference.Default.YurtOtomasyonDatabaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_ogrenciTableAdapter" GeneratorDataComponentClassName="tbl_ogrenciTableAdapter" Name="tbl_ogrenci" UserDataComponentName="tbl_ogrenciTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="YurtOtomasyonDatabaseConnectionString (Settings)" DbObjectName="YurtOtomasyonDatabase.dbo.tbl_ogrenci" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[tbl_ogrenci] WHERE (([ogr_id] = @Original_ogr_id) AND ((@IsNull_ogr_ad = 1 AND [ogr_ad] IS NULL) OR ([ogr_ad] = @Original_ogr_ad)) AND ((@IsNull_ogr_soyad = 1 AND [ogr_soyad] IS NULL) OR ([ogr_soyad] = @Original_ogr_soyad)) AND ((@IsNull_ogr_tc = 1 AND [ogr_tc] IS NULL) OR ([ogr_tc] = @Original_ogr_tc)) AND ((@IsNull_ogr_dogumTarihi = 1 AND [ogr_dogumTarihi] IS NULL) OR ([ogr_dogumTarihi] = @Original_ogr_dogumTarihi)) AND ((@IsNull_ogr_kanGrubu = 1 AND [ogr_kanGrubu] IS NULL) OR ([ogr_kanGrubu] = @Original_ogr_kanGrubu)) AND ((@IsNull_ogr_il = 1 AND [ogr_il] IS NULL) OR ([ogr_il] = @Original_ogr_il)) AND ((@IsNull_ogr_ilce = 1 AND [ogr_ilce] IS NULL) OR ([ogr_ilce] = @Original_ogr_ilce)) AND ((@IsNull_ogr_adres = 1 AND [ogr_adres] IS NULL) OR ([ogr_adres] = @Original_ogr_adres)) AND ((@IsNull_ogr_telNo = 1 AND [ogr_telNo] IS NULL) OR ([ogr_telNo] = @Original_ogr_telNo)) AND ((@IsNull_ogr_eposta = 1 AND [ogr_eposta] IS NULL) OR ([ogr_eposta] = @Original_ogr_eposta)) AND ((@IsNull_ogr_evTelNo = 1 AND [ogr_evTelNo] IS NULL) OR ([ogr_evTelNo] = @Original_ogr_evTelNo)) AND ((@IsNull_ogr_veliYakınlıkDurumu = 1 AND [ogr_veliYakınlıkDurumu] IS NULL) OR ([ogr_veliYakınlıkDurumu] = @Original_ogr_veliYakınlıkDurumu)) AND ((@IsNull_ogr_veliAd = 1 AND [ogr_veliAd] IS NULL) OR ([ogr_veliAd] = @Original_ogr_veliAd)) AND ((@IsNull_ogr_veliSoyad = 1 AND [ogr_veliSoyad] IS NULL) OR ([ogr_veliSoyad] = @Original_ogr_veliSoyad)) AND ((@IsNull_ogr_veliMeslek = 1 AND [ogr_veliMeslek] IS NULL) OR ([ogr_veliMeslek] = @Original_ogr_veliMeslek)) AND ((@IsNull_ogr_veliTelNo = 1 AND [ogr_veliTelNo] IS NULL) OR ([ogr_veliTelNo] = @Original_ogr_veliTelNo)) AND ((@IsNull_ogr_veliIsNo = 1 AND [ogr_veliIsNo] IS NULL) OR ([ogr_veliIsNo] = @Original_ogr_veliIsNo)) AND ((@IsNull_ogr_hakkinda = 1 AND [ogr_hakkinda] IS NULL) OR ([ogr_hakkinda] = @Original_ogr_hakkinda)) AND ((@IsNull_ogr_yakınlıkDurum = 1 AND [ogr_yakınlıkDurum] IS NULL) OR ([ogr_yakınlıkDurum] = @Original_ogr_yakınlıkDurum)) AND ((@IsNull_ogr_yakınTelNo = 1 AND [ogr_yakınTelNo] IS NULL) OR ([ogr_yakınTelNo] = @Original_ogr_yakınTelNo)) AND ((@IsNull_ogr_yakınAd = 1 AND [ogr_yakınAd] IS NULL) OR ([ogr_yakınAd] = @Original_ogr_yakınAd)) AND ((@IsNull_ogr_yakınSoyad = 1 AND [ogr_yakınSoyad] IS NULL) OR ([ogr_yakınSoyad] = @Original_ogr_yakınSoyad)) AND ((@IsNull_ogr_durum = 1 AND [ogr_durum] IS NULL) OR ([ogr_durum] = @Original_ogr_durum)) AND ((@IsNull_veli_id = 1 AND [veli_id] IS NULL) OR ([veli_id] = @Original_veli_id)) AND ((@IsNull_ogr_izinDurum = 1 AND [ogr_izinDurum] IS NULL) OR ([ogr_izinDurum] = @Original_ogr_izinDurum)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ogr_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_ad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_ad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_ad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_ad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_soyad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_soyad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_soyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_soyad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_tc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_tc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_tc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_tc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_dogumTarihi" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_dogumTarihi" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_ogr_dogumTarihi" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="ogr_dogumTarihi" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_kanGrubu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_kanGrubu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_kanGrubu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_kanGrubu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_il" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_il" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_il" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_il" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_ilce" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_ilce" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_ilce" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_ilce" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_adres" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_adres" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_adres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_adres" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_telNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_telNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_telNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_telNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_eposta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_eposta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_eposta" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_eposta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_evTelNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_evTelNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_evTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_evTelNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliYakınlıkDurumu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliYakınlıkDurumu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliYakınlıkDurumu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliYakınlıkDurumu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliAd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliAd" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliAd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliSoyad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliSoyad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliSoyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliSoyad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliMeslek" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliMeslek" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliMeslek" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliMeslek" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliTelNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliTelNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliTelNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliIsNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliIsNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliIsNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliIsNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_hakkinda" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_hakkinda" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_hakkinda" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_hakkinda" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_yakınlıkDurum" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_yakınlıkDurum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_yakınlıkDurum" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınlıkDurum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_yakınTelNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_yakınTelNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_yakınTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınTelNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_yakınAd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_yakınAd" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_yakınAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınAd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_yakınSoyad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_yakınSoyad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_yakınSoyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınSoyad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_durum" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_durum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_ogr_durum" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ogr_durum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_veli_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="veli_id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_veli_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="veli_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_izinDurum" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_izinDurum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_ogr_izinDurum" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ogr_izinDurum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[tbl_ogrenci] ([ogr_ad], [ogr_soyad], [ogr_tc], [ogr_dogumTarihi], [ogr_kanGrubu], [ogr_il], [ogr_ilce], [ogr_adres], [ogr_telNo], [ogr_eposta], [ogr_evTelNo], [ogr_veliYakınlıkDurumu], [ogr_veliAd], [ogr_veliSoyad], [ogr_veliMeslek], [ogr_veliTelNo], [ogr_veliIsNo], [ogr_hakkinda], [ogr_yakınlıkDurum], [ogr_yakınTelNo], [ogr_yakınAd], [ogr_yakınSoyad], [ogr_durum], [veli_id], [ogr_izinDurum]) VALUES (@ogr_ad, @ogr_soyad, @ogr_tc, @ogr_dogumTarihi, @ogr_kanGrubu, @ogr_il, @ogr_ilce, @ogr_adres, @ogr_telNo, @ogr_eposta, @ogr_evTelNo, @ogr_veliYakınlıkDurumu, @ogr_veliAd, @ogr_veliSoyad, @ogr_veliMeslek, @ogr_veliTelNo, @ogr_veliIsNo, @ogr_hakkinda, @ogr_yakınlıkDurum, @ogr_yakınTelNo, @ogr_yakınAd, @ogr_yakınSoyad, @ogr_durum, @veli_id, @ogr_izinDurum);
+SELECT ogr_id, ogr_ad, ogr_soyad, ogr_tc, ogr_dogumTarihi, ogr_kanGrubu, ogr_il, ogr_ilce, ogr_adres, ogr_telNo, ogr_eposta, ogr_evTelNo, ogr_veliYakınlıkDurumu, ogr_veliAd, ogr_veliSoyad, ogr_veliMeslek, ogr_veliTelNo, ogr_veliIsNo, ogr_hakkinda, ogr_yakınlıkDurum, ogr_yakınTelNo, ogr_yakınAd, ogr_yakınSoyad, ogr_durum, veli_id, ogr_izinDurum FROM tbl_ogrenci WHERE (ogr_id = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_ad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_ad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_soyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_soyad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_tc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_tc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@ogr_dogumTarihi" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="ogr_dogumTarihi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_kanGrubu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_kanGrubu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_il" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_il" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_ilce" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_ilce" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_adres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_adres" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_telNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_telNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_eposta" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_eposta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_evTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_evTelNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliYakınlıkDurumu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliYakınlıkDurumu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliAd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliSoyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliSoyad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliMeslek" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliMeslek" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliTelNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliIsNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliIsNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_hakkinda" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_hakkinda" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_yakınlıkDurum" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınlıkDurum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_yakınTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınTelNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_yakınAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınAd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_yakınSoyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınSoyad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@ogr_durum" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ogr_durum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@veli_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="veli_id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@ogr_izinDurum" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ogr_izinDurum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ogr_id, ogr_ad, ogr_soyad, ogr_tc, ogr_dogumTarihi, ogr_kanGrubu, ogr_il, ogr_ilce, ogr_adres, ogr_telNo, ogr_eposta, ogr_evTelNo, ogr_veliYakınlıkDurumu, ogr_veliAd, ogr_veliSoyad, ogr_veliMeslek, ogr_veliTelNo, ogr_veliIsNo, ogr_hakkinda, ogr_yakınlıkDurum, ogr_yakınTelNo, ogr_yakınAd, ogr_yakınSoyad, ogr_durum, veli_id, ogr_izinDurum FROM dbo.tbl_ogrenci</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[tbl_ogrenci] SET [ogr_ad] = @ogr_ad, [ogr_soyad] = @ogr_soyad, [ogr_tc] = @ogr_tc, [ogr_dogumTarihi] = @ogr_dogumTarihi, [ogr_kanGrubu] = @ogr_kanGrubu, [ogr_il] = @ogr_il, [ogr_ilce] = @ogr_ilce, [ogr_adres] = @ogr_adres, [ogr_telNo] = @ogr_telNo, [ogr_eposta] = @ogr_eposta, [ogr_evTelNo] = @ogr_evTelNo, [ogr_veliYakınlıkDurumu] = @ogr_veliYakınlıkDurumu, [ogr_veliAd] = @ogr_veliAd, [ogr_veliSoyad] = @ogr_veliSoyad, [ogr_veliMeslek] = @ogr_veliMeslek, [ogr_veliTelNo] = @ogr_veliTelNo, [ogr_veliIsNo] = @ogr_veliIsNo, [ogr_hakkinda] = @ogr_hakkinda, [ogr_yakınlıkDurum] = @ogr_yakınlıkDurum, [ogr_yakınTelNo] = @ogr_yakınTelNo, [ogr_yakınAd] = @ogr_yakınAd, [ogr_yakınSoyad] = @ogr_yakınSoyad, [ogr_durum] = @ogr_durum, [veli_id] = @veli_id, [ogr_izinDurum] = @ogr_izinDurum WHERE (([ogr_id] = @Original_ogr_id) AND ((@IsNull_ogr_ad = 1 AND [ogr_ad] IS NULL) OR ([ogr_ad] = @Original_ogr_ad)) AND ((@IsNull_ogr_soyad = 1 AND [ogr_soyad] IS NULL) OR ([ogr_soyad] = @Original_ogr_soyad)) AND ((@IsNull_ogr_tc = 1 AND [ogr_tc] IS NULL) OR ([ogr_tc] = @Original_ogr_tc)) AND ((@IsNull_ogr_dogumTarihi = 1 AND [ogr_dogumTarihi] IS NULL) OR ([ogr_dogumTarihi] = @Original_ogr_dogumTarihi)) AND ((@IsNull_ogr_kanGrubu = 1 AND [ogr_kanGrubu] IS NULL) OR ([ogr_kanGrubu] = @Original_ogr_kanGrubu)) AND ((@IsNull_ogr_il = 1 AND [ogr_il] IS NULL) OR ([ogr_il] = @Original_ogr_il)) AND ((@IsNull_ogr_ilce = 1 AND [ogr_ilce] IS NULL) OR ([ogr_ilce] = @Original_ogr_ilce)) AND ((@IsNull_ogr_adres = 1 AND [ogr_adres] IS NULL) OR ([ogr_adres] = @Original_ogr_adres)) AND ((@IsNull_ogr_telNo = 1 AND [ogr_telNo] IS NULL) OR ([ogr_telNo] = @Original_ogr_telNo)) AND ((@IsNull_ogr_eposta = 1 AND [ogr_eposta] IS NULL) OR ([ogr_eposta] = @Original_ogr_eposta)) AND ((@IsNull_ogr_evTelNo = 1 AND [ogr_evTelNo] IS NULL) OR ([ogr_evTelNo] = @Original_ogr_evTelNo)) AND ((@IsNull_ogr_veliYakınlıkDurumu = 1 AND [ogr_veliYakınlıkDurumu] IS NULL) OR ([ogr_veliYakınlıkDurumu] = @Original_ogr_veliYakınlıkDurumu)) AND ((@IsNull_ogr_veliAd = 1 AND [ogr_veliAd] IS NULL) OR ([ogr_veliAd] = @Original_ogr_veliAd)) AND ((@IsNull_ogr_veliSoyad = 1 AND [ogr_veliSoyad] IS NULL) OR ([ogr_veliSoyad] = @Original_ogr_veliSoyad)) AND ((@IsNull_ogr_veliMeslek = 1 AND [ogr_veliMeslek] IS NULL) OR ([ogr_veliMeslek] = @Original_ogr_veliMeslek)) AND ((@IsNull_ogr_veliTelNo = 1 AND [ogr_veliTelNo] IS NULL) OR ([ogr_veliTelNo] = @Original_ogr_veliTelNo)) AND ((@IsNull_ogr_veliIsNo = 1 AND [ogr_veliIsNo] IS NULL) OR ([ogr_veliIsNo] = @Original_ogr_veliIsNo)) AND ((@IsNull_ogr_hakkinda = 1 AND [ogr_hakkinda] IS NULL) OR ([ogr_hakkinda] = @Original_ogr_hakkinda)) AND ((@IsNull_ogr_yakınlıkDurum = 1 AND [ogr_yakınlıkDurum] IS NULL) OR ([ogr_yakınlıkDurum] = @Original_ogr_yakınlıkDurum)) AND ((@IsNull_ogr_yakınTelNo = 1 AND [ogr_yakınTelNo] IS NULL) OR ([ogr_yakınTelNo] = @Original_ogr_yakınTelNo)) AND ((@IsNull_ogr_yakınAd = 1 AND [ogr_yakınAd] IS NULL) OR ([ogr_yakınAd] = @Original_ogr_yakınAd)) AND ((@IsNull_ogr_yakınSoyad = 1 AND [ogr_yakınSoyad] IS NULL) OR ([ogr_yakınSoyad] = @Original_ogr_yakınSoyad)) AND ((@IsNull_ogr_durum = 1 AND [ogr_durum] IS NULL) OR ([ogr_durum] = @Original_ogr_durum)) AND ((@IsNull_veli_id = 1 AND [veli_id] IS NULL) OR ([veli_id] = @Original_veli_id)) AND ((@IsNull_ogr_izinDurum = 1 AND [ogr_izinDurum] IS NULL) OR ([ogr_izinDurum] = @Original_ogr_izinDurum)));
+SELECT ogr_id, ogr_ad, ogr_soyad, ogr_tc, ogr_dogumTarihi, ogr_kanGrubu, ogr_il, ogr_ilce, ogr_adres, ogr_telNo, ogr_eposta, ogr_evTelNo, ogr_veliYakınlıkDurumu, ogr_veliAd, ogr_veliSoyad, ogr_veliMeslek, ogr_veliTelNo, ogr_veliIsNo, ogr_hakkinda, ogr_yakınlıkDurum, ogr_yakınTelNo, ogr_yakınAd, ogr_yakınSoyad, ogr_durum, veli_id, ogr_izinDurum FROM tbl_ogrenci WHERE (ogr_id = @ogr_id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_ad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_ad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_soyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_soyad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_tc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_tc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@ogr_dogumTarihi" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="ogr_dogumTarihi" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_kanGrubu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_kanGrubu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_il" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_il" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_ilce" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_ilce" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_adres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_adres" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_telNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_telNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_eposta" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_eposta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_evTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_evTelNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliYakınlıkDurumu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliYakınlıkDurumu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliAd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliSoyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliSoyad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliMeslek" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliMeslek" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliTelNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_veliIsNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliIsNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_hakkinda" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_hakkinda" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_yakınlıkDurum" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınlıkDurum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_yakınTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınTelNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_yakınAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınAd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ogr_yakınSoyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınSoyad" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@ogr_durum" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ogr_durum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@veli_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="veli_id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@ogr_izinDurum" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ogr_izinDurum" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ogr_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_ad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_ad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_ad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_ad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_soyad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_soyad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_soyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_soyad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_tc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_tc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_tc" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_tc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_dogumTarihi" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_dogumTarihi" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_ogr_dogumTarihi" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="ogr_dogumTarihi" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_kanGrubu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_kanGrubu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_kanGrubu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_kanGrubu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_il" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_il" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_il" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_il" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_ilce" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_ilce" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_ilce" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_ilce" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_adres" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_adres" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_adres" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_adres" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_telNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_telNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_telNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_telNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_eposta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_eposta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_eposta" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_eposta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_evTelNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_evTelNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_evTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_evTelNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliYakınlıkDurumu" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliYakınlıkDurumu" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliYakınlıkDurumu" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliYakınlıkDurumu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliAd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliAd" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliAd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliSoyad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliSoyad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliSoyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliSoyad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliMeslek" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliMeslek" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliMeslek" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliMeslek" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliTelNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliTelNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliTelNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_veliIsNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_veliIsNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_veliIsNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_veliIsNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_hakkinda" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_hakkinda" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_hakkinda" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_hakkinda" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_yakınlıkDurum" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_yakınlıkDurum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_yakınlıkDurum" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınlıkDurum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_yakınTelNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_yakınTelNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_yakınTelNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınTelNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_yakınAd" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_yakınAd" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_yakınAd" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınAd" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_yakınSoyad" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_yakınSoyad" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ogr_yakınSoyad" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ogr_yakınSoyad" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_durum" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_durum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_ogr_durum" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ogr_durum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_veli_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="veli_id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_veli_id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="veli_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ogr_izinDurum" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ogr_izinDurum" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_ogr_izinDurum" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ogr_izinDurum" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ogr_id" ColumnName="ogr_id" DataSourceName="YurtOtomasyonDatabase.dbo.tbl_ogrenci" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@ogr_id" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ogr_id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ogr_id" DataSetColumn="ogr_id" />
+              <Mapping SourceColumn="ogr_ad" DataSetColumn="ogr_ad" />
+              <Mapping SourceColumn="ogr_soyad" DataSetColumn="ogr_soyad" />
+              <Mapping SourceColumn="ogr_tc" DataSetColumn="ogr_tc" />
+              <Mapping SourceColumn="ogr_dogumTarihi" DataSetColumn="ogr_dogumTarihi" />
+              <Mapping SourceColumn="ogr_kanGrubu" DataSetColumn="ogr_kanGrubu" />
+              <Mapping SourceColumn="ogr_il" DataSetColumn="ogr_il" />
+              <Mapping SourceColumn="ogr_ilce" DataSetColumn="ogr_ilce" />
+              <Mapping SourceColumn="ogr_adres" DataSetColumn="ogr_adres" />
+              <Mapping SourceColumn="ogr_telNo" DataSetColumn="ogr_telNo" />
+              <Mapping SourceColumn="ogr_eposta" DataSetColumn="ogr_eposta" />
+              <Mapping SourceColumn="ogr_evTelNo" DataSetColumn="ogr_evTelNo" />
+              <Mapping SourceColumn="ogr_veliYakınlıkDurumu" DataSetColumn="ogr_veliYakınlıkDurumu" />
+              <Mapping SourceColumn="ogr_veliAd" DataSetColumn="ogr_veliAd" />
+              <Mapping SourceColumn="ogr_veliSoyad" DataSetColumn="ogr_veliSoyad" />
+              <Mapping SourceColumn="ogr_veliMeslek" DataSetColumn="ogr_veliMeslek" />
+              <Mapping SourceColumn="ogr_veliTelNo" DataSetColumn="ogr_veliTelNo" />
+              <Mapping SourceColumn="ogr_veliIsNo" DataSetColumn="ogr_veliIsNo" />
+              <Mapping SourceColumn="ogr_hakkinda" DataSetColumn="ogr_hakkinda" />
+              <Mapping SourceColumn="ogr_yakınlıkDurum" DataSetColumn="ogr_yakınlıkDurum" />
+              <Mapping SourceColumn="ogr_yakınTelNo" DataSetColumn="ogr_yakınTelNo" />
+              <Mapping SourceColumn="ogr_yakınAd" DataSetColumn="ogr_yakınAd" />
+              <Mapping SourceColumn="ogr_yakınSoyad" DataSetColumn="ogr_yakınSoyad" />
+              <Mapping SourceColumn="ogr_durum" DataSetColumn="ogr_durum" />
+              <Mapping SourceColumn="veli_id" DataSetColumn="veli_id" />
+              <Mapping SourceColumn="ogr_izinDurum" DataSetColumn="ogr_izinDurum" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OgrenciDataBase" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OgrenciDataBase" msprop:Generator_UserDSName="OgrenciDataBase">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_ogrenci" msprop:Generator_TableClassName="tbl_ogrenciDataTable" msprop:Generator_TableVarName="tabletbl_ogrenci" msprop:Generator_TablePropName="tbl_ogrenci" msprop:Generator_RowDeletingName="tbl_ogrenciRowDeleting" msprop:Generator_RowChangingName="tbl_ogrenciRowChanging" msprop:Generator_RowEvHandlerName="tbl_ogrenciRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_ogrenciRowDeleted" msprop:Generator_UserTableName="tbl_ogrenci" msprop:Generator_RowChangedName="tbl_ogrenciRowChanged" msprop:Generator_RowEvArgName="tbl_ogrenciRowChangeEvent" msprop:Generator_RowClassName="tbl_ogrenciRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ogr_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnogr_id" msprop:Generator_ColumnPropNameInRow="ogr_id" msprop:Generator_ColumnPropNameInTable="ogr_idColumn" msprop:Generator_UserColumnName="ogr_id" type="xs:int" />
+              <xs:element name="ogr_ad" msprop:Generator_ColumnVarNameInTable="columnogr_ad" msprop:Generator_ColumnPropNameInRow="ogr_ad" msprop:Generator_ColumnPropNameInTable="ogr_adColumn" msprop:Generator_UserColumnName="ogr_ad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_soyad" msprop:Generator_ColumnVarNameInTable="columnogr_soyad" msprop:Generator_ColumnPropNameInRow="ogr_soyad" msprop:Generator_ColumnPropNameInTable="ogr_soyadColumn" msprop:Generator_UserColumnName="ogr_soyad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_tc" msprop:Generator_ColumnVarNameInTable="columnogr_tc" msprop:Generator_ColumnPropNameInRow="ogr_tc" msprop:Generator_ColumnPropNameInTable="ogr_tcColumn" msprop:Generator_UserColumnName="ogr_tc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_dogumTarihi" msprop:Generator_ColumnVarNameInTable="columnogr_dogumTarihi" msprop:Generator_ColumnPropNameInRow="ogr_dogumTarihi" msprop:Generator_ColumnPropNameInTable="ogr_dogumTarihiColumn" msprop:Generator_UserColumnName="ogr_dogumTarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ogr_kanGrubu" msprop:Generator_ColumnVarNameInTable="columnogr_kanGrubu" msprop:Generator_ColumnPropNameInRow="ogr_kanGrubu" msprop:Generator_ColumnPropNameInTable="ogr_kanGrubuColumn" msprop:Generator_UserColumnName="ogr_kanGrubu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_il" msprop:Generator_ColumnVarNameInTable="columnogr_il" msprop:Generator_ColumnPropNameInRow="ogr_il" msprop:Generator_ColumnPropNameInTable="ogr_ilColumn" msprop:Generator_UserColumnName="ogr_il" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_ilce" msprop:Generator_ColumnVarNameInTable="columnogr_ilce" msprop:Generator_ColumnPropNameInRow="ogr_ilce" msprop:Generator_ColumnPropNameInTable="ogr_ilceColumn" msprop:Generator_UserColumnName="ogr_ilce" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_adres" msprop:Generator_ColumnVarNameInTable="columnogr_adres" msprop:Generator_ColumnPropNameInRow="ogr_adres" msprop:Generator_ColumnPropNameInTable="ogr_adresColumn" msprop:Generator_UserColumnName="ogr_adres" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_telNo" msprop:Generator_ColumnVarNameInTable="columnogr_telNo" msprop:Generator_ColumnPropNameInRow="ogr_telNo" msprop:Generator_ColumnPropNameInTable="ogr_telNoColumn" msprop:Generator_UserColumnName="ogr_telNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_eposta" msprop:Generator_ColumnVarNameInTable="columnogr_eposta" msprop:Generator_ColumnPropNameInRow="ogr_eposta" msprop:Generator_ColumnPropNameInTable="ogr_epostaColumn" msprop:Generator_UserColumnName="ogr_eposta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_evTelNo" msprop:Generator_ColumnVarNameInTable="columnogr_evTelNo" msprop:Generator_ColumnPropNameInRow="ogr_evTelNo" msprop:Generator_ColumnPropNameInTable="ogr_evTelNoColumn" msprop:Generator_UserColumnName="ogr_evTelNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_veliYakınlıkDurumu" msprop:Generator_ColumnVarNameInTable="columnogr_veliYakınlıkDurumu" msprop:Generator_ColumnPropNameInRow="ogr_veliYakınlıkDurumu" msprop:Generator_ColumnPropNameInTable="ogr_veliYakınlıkDurumuColumn" msprop:Generator_UserColumnName="ogr_veliYakınlıkDurumu" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_veliAd" msprop:Generator_ColumnVarNameInTable="columnogr_veliAd" msprop:Generator_ColumnPropNameInRow="ogr_veliAd" msprop:Generator_ColumnPropNameInTable="ogr_veliAdColumn" msprop:Generator_UserColumnName="ogr_veliAd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_veliSoyad" msprop:Generator_ColumnVarNameInTable="columnogr_veliSoyad" msprop:Generator_ColumnPropNameInRow="ogr_veliSoyad" msprop:Generator_ColumnPropNameInTable="ogr_veliSoyadColumn" msprop:Generator_UserColumnName="ogr_veliSoyad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_veliMeslek" msprop:Generator_ColumnVarNameInTable="columnogr_veliMeslek" msprop:Generator_ColumnPropNameInRow="ogr_veliMeslek" msprop:Generator_ColumnPropNameInTable="ogr_veliMeslekColumn" msprop:Generator_UserColumnName="ogr_veliMeslek" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_veliTelNo" msprop:Generator_ColumnVarNameInTable="columnogr_veliTelNo" msprop:Generator_ColumnPropNameInRow="ogr_veliTelNo" msprop:Generator_ColumnPropNameInTable="ogr_veliTelNoColumn" msprop:Generator_UserColumnName="ogr_veliTelNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_veliIsNo" msprop:Generator_ColumnVarNameInTable="columnogr_veliIsNo" msprop:Generator_ColumnPropNameInRow="ogr_veliIsNo" msprop:Generator_ColumnPropNameInTable="ogr_veliIsNoColumn" msprop:Generator_UserColumnName="ogr_veliIsNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_hakkinda" msprop:Generator_ColumnVarNameInTable="columnogr_hakkinda" msprop:Generator_ColumnPropNameInRow="ogr_hakkinda" msprop:Generator_ColumnPropNameInTable="ogr_hakkindaColumn" msprop:Generator_UserColumnName="ogr_hakkinda" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_yakınlıkDurum" msprop:Generator_ColumnVarNameInTable="columnogr_yakınlıkDurum" msprop:Generator_ColumnPropNameInRow="ogr_yakınlıkDurum" msprop:Generator_ColumnPropNameInTable="ogr_yakınlıkDurumColumn" msprop:Generator_UserColumnName="ogr_yakınlıkDurum" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_yakınTelNo" msprop:Generator_ColumnVarNameInTable="columnogr_yakınTelNo" msprop:Generator_ColumnPropNameInRow="ogr_yakınTelNo" msprop:Generator_ColumnPropNameInTable="ogr_yakınTelNoColumn" msprop:Generator_UserColumnName="ogr_yakınTelNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_yakınAd" msprop:Generator_ColumnVarNameInTable="columnogr_yakınAd" msprop:Generator_ColumnPropNameInRow="ogr_yakınAd" msprop:Generator_ColumnPropNameInTable="ogr_yakınAdColumn" msprop:Generator_UserColumnName="ogr_yakınAd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_yakınSoyad" msprop:Generator_ColumnVarNameInTable="columnogr_yakınSoyad" msprop:Generator_ColumnPropNameInRow="ogr_yakınSoyad" msprop:Generator_ColumnPropNameInTable="ogr_yakınSoyadColumn" msprop:Generator_UserColumnName="ogr_yakınSoyad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ogr_durum" msprop:Generator_ColumnVarNameInTable="columnogr_durum" msprop:Generator_ColumnPropNameInRow="ogr_durum" msprop:Generator_ColumnPropNameInTable="ogr_durumColumn" msprop:Generator_UserColumnName="ogr_durum" type="xs:boolean" minOccurs="0" />
+              <xs:element name="veli_id" msprop:Generator_ColumnVarNameInTable="columnveli_id" msprop:Generator_ColumnPropNameInRow="veli_id" msprop:Generator_ColumnPropNameInTable="veli_idColumn" msprop:Generator_UserColumnName="veli_id" type="xs:int" minOccurs="0" />
+              <xs:element name="ogr_izinDurum" msprop:Generator_ColumnVarNameInTable="columnogr_izinDurum" msprop:Generator_ColumnPropNameInRow="ogr_izinDurum" msprop:Generator_ColumnPropNameInTable="ogr_izinDurumColumn" msprop:Generator_UserColumnName="ogr_izinDurum" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_ogrenci" />
+      <xs:field xpath="mstns:ogr_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
